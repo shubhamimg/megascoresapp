@@ -1,0 +1,45 @@
+.faq_section {
+  & .faq-wrap{
+    & .card{
+      border: 1px solid #fafafa;
+      border-radius: 4px;
+      margin: 0 0 15px;
+      position: relative;
+      & .card-header{
+        padding: 0;
+        position: relative;
+        background: #fafafa;
+        border-bottom: 1px solid #fafafa;
+        & h4{
+          & button{
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            padding: 16px 20px;
+            font-size: 15px;
+            line-height: inherit;
+            font-weight: 600;
+            border: 0;
+            margin: 0;
+            position: relative;
+            text-decoration: none;
+            color: #f8f9fa;
+            background-color: $primary2;
+            text-transform: capitalize;        
+          }
+        }
+      }
+      & .collapse{
+        & .card-body{
+          background: #fff;
+          border-bottom: 1px solid #fafafa;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          line-height: 25px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

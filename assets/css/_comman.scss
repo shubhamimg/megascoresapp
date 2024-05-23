@@ -1,0 +1,135 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.comman_button {
+  background: $primary1;
+  border-radius: 50px;
+  color: $white;
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding: 10px 20px;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 30px;
+  text-decoration: none;
+  transition: all 0.8s;
+  z-index: 9;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    background-color: darken($primary1, 10);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s;
+    z-index: -1;
+  }
+  &:hover::after {
+    left: 0;
+    z-index: -1;
+    width: 50%;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -100%;
+    background-color: darken($primary1, 10);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: all 0.8s;
+    z-index: -1;
+  }
+  &:hover::before {
+    right: 0;
+    z-index: -1;
+    width: 50%;
+  }
+  &:hover {
+    color: $white;
+  }
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section_title {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  & h2 {
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 46px;
+    padding-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    color: $primary2;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px #161616a8;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      width: 76px;
+      background-color: $primary2;
+      z-index: -1;
+      box-shadow: 0 1px 13px #1616168f;
+      border-radius: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.comman_section {
+  padding: 160px 0 60px;
+  & .nav {
+    border: #f2f2f2 2px solid;
+    border-bottom: none;
+    & a {
+      border-bottom: #f2f2f2 2px solid;
+      border-radius: 0px;
+      color: $black;
+      padding: 12px 18px;
+      font-size: 15px;
+      &.active {
+        color: #fff;
+        background-color: $primary;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($primary1, 10);
+}
+
+#shadow-host-companion{
+  padding: 0px !important;
+}

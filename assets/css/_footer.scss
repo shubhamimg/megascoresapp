@@ -1,0 +1,89 @@
+.footer_part {
+  padding: 50px 0 0;
+  background: linear-gradient(90deg, $primary1 1%, $primary2) !important;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .footer_box {
+    & .box_head {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: $white;
+      padding-bottom: 40px;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 11px;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: $white;
+        z-index: 1;
+        transition: 0.5s all;
+      }
+    }
+    & .social_icon {
+      & ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        & li {
+          & a {
+            background-color: $primary1;
+            color: $white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 30px 0 30px 0;
+            margin-right: 14px;
+            transition: 0.5s all;
+            &:hover {
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+    & .links_footer {
+      & a {
+        color: $white;
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 12px;
+        font-size: 13px;
+        transition: 0.5s;
+        & strong {
+          font-weight: 600;
+        }
+        &:hover {
+          transform: translateY(5px);
+        }
+      }
+    }
+  }
+  .copyright {
+    padding: 14px 0;
+    margin-top: 50px;
+    border-top: 1px dashed #fff;
+    color: #fff;
+    & img{
+      filter: brightness(50);
+    }
+    & a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}

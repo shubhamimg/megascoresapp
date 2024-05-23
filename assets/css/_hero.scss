@@ -1,0 +1,209 @@
+.hero_section {
+  padding: 60px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+
+  & .container {
+    padding: 90px 0 150px;
+  }
+
+  & .circle-shape {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 30%;
+  }
+
+  & .hero-bg-inner {
+    position: absolute;
+    z-index: -2;
+    top: -40%;
+    left: -1rem;
+    width: 130%;
+    height: 100%;
+    transform: rotate(-12deg);
+    border-bottom-left-radius: 6rem;
+    background: linear-gradient(90deg, $primary2 1%, $primary1) !important;
+  }
+
+  & .hero_center_img {
+    position: relative;
+    z-index: 9;
+    max-width: 100%;
+  }
+
+  & .hero_content {
+    & h1 {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 70px;
+      margin-bottom: 10px;
+      letter-spacing: 4px;
+
+      & span {
+        color: $white;
+        font-weight: 900;
+      }
+    }
+
+    & p {
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      line-height: 30px;
+      max-width: 500px;
+    }
+
+    &>span {
+      color: $white;
+      font-weight: 600;
+      font-size: 17px;
+      font-style: italic;
+    }
+  }
+}
+
+
+.refer_earn {
+  // padding: 60px 0;
+  padding-top: 147px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+
+  & .hero-bg-inner {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    top: 0;
+    background: linear-gradient(90deg, #161a33 1%, #cca016) !important;
+  }
+
+  & .hero_content {
+    & .main-heading {
+      // font-family: 'Rubik';
+      // font-style: normal;
+      font-weight: 700;
+      font-size: 39px;
+      line-height: 120%;
+      color: #fff;
+
+      & span {
+        color: #25CF43;
+      }
+    }
+
+    & .sms-div {
+      & .phoneInput {
+        height: 60px;
+        padding: 1px;
+        background: linear-gradient(140deg, rgba(255, 123, 82, 1), rgba(131, 67, 255, 0.76));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        padding: 1px;
+
+        & .input-group {
+          height: 100%;
+
+          & .form-control {
+            background-color: #161a33 !important;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            height: 100%;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+
+            &::placeholder {
+              color: #fff;
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+
+          & .input-group-text {
+            background-color: #161a33 !important;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding-left: 150px;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+
+            // position: absolute;
+          }
+        }
+      }
+    }
+
+    & .herobtn {
+      border-radius: 100px;
+      padding: 19px;
+      margin-bottom: 20px;
+      margin-top: 0;
+      width: 100%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #cca016;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      position: relative;
+      margin-left: 0px;
+
+    }
+  }
+
+  & .heroImg {
+    max-width: 600px;
+  }
+}
+
+.referCard {
+  background-color: #fff;
+
+  & .cardEarnSection {
+    border: 1px solid;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(34px);
+    padding: 20px 40px;
+
+    & .referImg {}
+
+    & .cardContent {
+      & .earnheading {
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 40px;
+        align-items: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        background: linear-gradient(90.84deg, #FFFFFF 0.17%, rgba(255, 255, 255, 0.54) 102%);
+        padding: 0px 0px 40px 0px;
+      }
+
+      & .pera {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.promo {
+  aspect-ratio: 1/.6;
+
+}

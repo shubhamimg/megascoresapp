@@ -1,0 +1,117 @@
+.how_to_play {
+  & .feature-img {
+    text-align: center;
+
+    & img {
+      max-width: 430px;
+    }
+  }
+
+  & .feature-box {
+    padding: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    transition: 0.3s all;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+    span {
+      position: absolute;
+      opacity: 0.1;
+      font-size: 38px;
+      font-weight: 900;
+      text-transform: uppercase;
+      top: 12px;
+    }
+
+    & i {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      background: $primary1;
+      color: $white;
+    }
+
+    & h5 {
+      font-weight: bold;
+      color: $primary2;
+      font-size: 16px;
+      margin: 10px 0 10px;
+    }
+
+    & p {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+
+  & .step-1,
+  .step-3 {
+    & span {
+      left: 20px;
+    }
+  }
+
+  & .step-2,
+  .step-4 {
+    & span {
+      right: 20px;
+    }
+  }
+
+  & .step-1:hover {
+    box-shadow: -6px -5px 4px 2px #0000002b;
+  }
+
+  & .step-2:hover {
+    box-shadow: 6px -5px 4px 2px #0000002b;
+  }
+
+  & .step-3:hover {
+    box-shadow: -6px 5px 4px 2px #0000002b;
+  }
+
+  & .step-4:hover {
+    box-shadow: 6px 5px 4px 2px #0000002b;
+  }
+
+  & .border-style-right {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -9px;
+      margin: 0 auto;
+      background-image: linear-gradient(to bottom, #142132, #344352, #586975, #7f9098, #aab9be, #aab9be, #aab9be, #aab9be, #7f9098, #586975, #344352, #142132);
+      height: 95%;
+      width: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  & .border-right-style {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, #2b6674, #527f8b, #7599a3, #98b4bb, #bccfd4, #bccfd4, #bccfd5, #bccfd5, #98b4bc, #7599a4, #527f8d, #2b6676);
+      height: 1px;
+      width: 80%;
+      bottom: 15px;
+    }
+  }
+}
